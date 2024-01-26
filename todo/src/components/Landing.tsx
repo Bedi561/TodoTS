@@ -4,10 +4,11 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+// import { BASE_URL } from "../config.js";
 
 const FirstPageAppbar = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <Box

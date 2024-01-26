@@ -5,8 +5,8 @@ import Button from '@mui/material/Button';
 import TextField from "@mui/material/TextField";
 import { Card, Typography } from "@mui/material";
 import axios from "axios";
-import { useSetRecoilState } from "recoil";
-import { userState } from "../store/atoms/user.js";
+// import { useSetRecoilState } from "recoil";
+// import { userState } from "../store/atoms/user.js";
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
@@ -36,7 +36,7 @@ const Signup = () => {
         }
     };
 
-    const setUser = useSetRecoilState(userState);
+    // const setUser = useSetRecoilState(userState);
 
     return (
         <>
