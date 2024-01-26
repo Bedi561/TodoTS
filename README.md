@@ -1,3 +1,17 @@
+NOTE 
+What's Special:
+
+Easy Code Structure: We've organized our code in a way that makes it simple to understand. It's like arranging things neatly on a shelf so that you can find them easily.
+
+TypeScript Magic: We used TypeScript, a tool that helps us write code with fewer mistakes. Think of it as having a spell-checker for our code!
+
+Hooks for Smooth Actions: We've used something called "hooks" to make your interactions smooth. It's like using shortcuts to get things done faster.
+
+Secure Access with JWT: For security, we use JWT (don't worry about the technical name). It's like a secret code that only you and the app know, making sure your to-do list is safe.
+
+
+
+
 # Project Overview
 
 This repository comprises a suite of APIs designed to facilitate task and subtask management, all secured through user authentication via JWT tokens. The APIs offer functionalities such as creating tasks, retrieving user tasks, updating task details, and soft deletion of tasks. While some functionalities are fully implemented, work is still ongoing for the subtask-related features.
@@ -33,6 +47,11 @@ Work is ongoing to implement the retrieval of all subtasks associated with the a
 ### 3. Update Subtask
 
 In progress is the development of the ability to update the status of a specified subtask.
+
+
+
+
+
 
 ### 4. Delete Subtask (Soft Deletion)
 
