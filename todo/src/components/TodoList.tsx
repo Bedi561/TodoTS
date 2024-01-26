@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { authState } from '../store/authState';
 import { useRecoilValue } from 'recoil';
 import { Box, Button, Typography, TextField } from '@mui/material';
+import { BASE_URL } from "../config.js";
 
 interface Todo {
   _id: string;
@@ -22,7 +24,7 @@ const TodoList: React.FC = () => {
   useEffect(() => {
     const getTodos = async () => {
       try {
-        const response = await fetch('http://localhost:3003/todo/todos', {
+        const response = await fetch(`${BASE_URL}/todo/todos`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
 
@@ -42,7 +44,7 @@ const TodoList: React.FC = () => {
 
   const addTodo = async () => {
     try {
-      const response = await fetch('http://localhost:3003/todo/todos', {
+      const response = await fetch(`${BASE_URL}/todo/todos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -68,7 +70,7 @@ const TodoList: React.FC = () => {
 
     if (confirmed) {
       try {
-        const response = await fetch(`http://localhost:3003/todo/todos/${id}/done`, {
+        const response = await fetch(`${BASE_URL}/todo/todos/${id}/done`, {
           method: 'PUT',
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
